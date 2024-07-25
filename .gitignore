@@ -130,9 +130,10 @@ dist
 .pnp.*
 
 # dependencies
-/node_modules
 /.pnp
 .pnp.js
+dist-ssr
+*.local
 
 # testing
 /coverage
@@ -140,6 +141,13 @@ dist
 # production
 /build
 
-# misc
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
 .DS_Store
-
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

@@ -1,8 +1,8 @@
-# KisanWise
+# 🌾 KisanWise
 
 KisanWise is an AI-powered platform providing personalized agricultural advice to farmers. Leveraging advanced AI, it offers real-time assistance, expert guidance, and a wealth of resources to support sustainable farming. Built with React, Express, and MongoDB, KisanWise aims to enhance productivity and ensure food security.
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 kisanWise/
@@ -25,17 +25,17 @@ kisanWise/
 │   │   ├── services/
 │   │   ├── styles/
 │   │   ├── store/
-│   │   ├── App.js
-│   │   ├── index.js
+│   │   ├── App.jsx
+│   │   ├── main.jsx
 │   └── package.json
 ├── .gitignore
 ├── README.md
 └── package.json
 ```
 
-## Getting Started
+## 🚀 Getting Started
 
-### Prerequisites
+### ✅ Prerequisites
 
 Make sure you have the following installed on your local development environment:
 
@@ -43,7 +43,7 @@ Make sure you have the following installed on your local development environment
 - [npm](https://www.npmjs.com/)
 - [MongoDB](https://www.mongodb.com/)
 
-### Backend Setup
+### 🔧 Backend Setup
 
 1. **Navigate to the `backend` directory:**
 
@@ -70,7 +70,7 @@ Make sure you have the following installed on your local development environment
     npm start
     ```
 
-### Frontend Setup
+### 💻 Frontend Setup
 
 1. **Navigate to the `frontend` directory:**
 
@@ -87,10 +87,10 @@ Make sure you have the following installed on your local development environment
 3. **Start the frontend development server:**
 
     ```bash
-    npm start
+    npm run dev
     ```
 
-### Running Both Servers Concurrently
+### 🔄 Running Both Servers Concurrently
 
 To run both the backend and frontend servers concurrently, you can use the root `package.json` scripts.
 
@@ -106,13 +106,31 @@ To run both the backend and frontend servers concurrently, you can use the root 
     npm start
     ```
 
-This will concurrently run the backend server and the frontend development server.
+This will concurrently run the backend server and the frontend development server using `concurrently`.
 
-## Contributing
+### 📝 Root `package.json` Scripts
 
-We welcome contributions from the community. Please fork the repository, make your changes, and submit a pull request. Ensure your code adheres to our coding standards and includes relevant tests.
+Ensure your root `package.json` includes the following scripts:
 
-## License
+```json
+{
+  "name": "kisanwise",
+  "version": "1.0.0",
+  "description": "KisanWise is an AI-powered platform providing personalized agricultural advice to farmers.",
+  "scripts": {
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm run dev",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\""
+  },
+  "author": "Dev Jones",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^6.0.0"
+  }
+}
+```
+
+## 📜 License
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
 

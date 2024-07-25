@@ -2,10 +2,9 @@
     "name": "kisanwise",
     "version": "1.0.0",
     "description": "KisanWise is an AI-powered platform providing personalized agricultural advice to farmers.",
-    "main": "index.js",
     "scripts": {
         "start:backend": "cd backend && npm start",
-        "start:frontend": "cd frontend && npm start",
+        "start:frontend": "cd frontend && npm run dev",
         "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\""
     },
     "author": "Dev Jones",
