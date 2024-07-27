@@ -1,6 +1,6 @@
 const exampleService = require("../services/exampleService");
 
-exports.getExample = async (req, res) => {
+const getExample = async (req, res) => {
     try {
         const data = await exampleService.getExampleData();
         res.json(data);
@@ -8,3 +8,6 @@ exports.getExample = async (req, res) => {
         res.status(500).json({ message: error.message });
     }
 };
+
+
+module.exports= {getExample}
