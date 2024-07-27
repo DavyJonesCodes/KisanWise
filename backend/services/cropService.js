@@ -1,12 +1,11 @@
-const { deleteCrop } = require("../controllers/cropController");
 const Crop = require("../models/cropModel");
 
-const getAllCrops = async () => {
+exports.getAllCrs = async () => {
     const crops = await Crop.find({});
     return crops;
 }
 
-const getCrop = async (cropId) => {
+exports.getCr = async (cropId) => {
     try {
         const crop = await Crop.findById(cropId);
         return crop;
@@ -16,13 +15,13 @@ const getCrop = async (cropId) => {
     }
 }
 
-const addCrop = async (cropData) => {
+exports.addCr = async (cropData) => {
     const crop = new Crop(cropData);
     const savedCrop = await crop.save();
     return savedCrop;
 };
 
-const updateCrop = async (cropId, cropData) => {
+exports.updateCr = async (cropId, cropData) => {
     try {
         const updatedCrop = await Crop.findByIdAndUpdate(cropId, cropData, { new: true, runValidators: true });
         return updatedCrop;
@@ -32,7 +31,7 @@ const updateCrop = async (cropId, cropData) => {
     }
 };
 
-const deleteCrop = async (cropId) => {
+exports.deleteCr = async (cropId) => {
     try {
         const deletedCrop = await Crop.findByIdAndDelete(cropId);
         return deletedCrop;
@@ -42,4 +41,3 @@ const deleteCrop = async (cropId) => {
     }
 };
 
-module.exports = { addCrop, updateCrop, getAllCrops, getCrop, deleteCrop }

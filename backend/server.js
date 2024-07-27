@@ -6,15 +6,18 @@ dotenv.config();
 
 const app = express();
 app.use(express.json());
+const PORT = process.env.PORT || 5001;
 
 
-const exampleController = require("../controllers/exampleController");
-const cropController = require("../controllers/cropController");
+const cropController = require("./controllers/cropController");
 
 // Connect to MongoDB
 mongoose
     .connect(process.env.MONGO_URI)
-    .then(() => console.log("MongoDB connected"))
+    .then(() =>{ 
+        console.log("MongoDB connected")
+        app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+    })
     .catch((err) => console.log(err));
 
 // Define Routes
@@ -28,5 +31,3 @@ app.delete("/api/crops/:id", cropController.deleteCrop);
 
 
 
-const PORT = process.env.PORT || 5001;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

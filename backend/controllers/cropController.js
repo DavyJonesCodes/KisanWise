@@ -1,18 +1,18 @@
 const cropService = require("../services/cropService");
 
-const getAllCrops = async (req, res) => {
+exports.getAllCrops = async (req, res) => {
     try {
-        const data = await cropService.getAllCrops();
+        const data = await cropService.getAllCrs();
         res.json(data);
     } catch (error) {
         res.status(500).json({ message: error.message });
     }
 };
 
-const getCrop = async (req, res) => {
+exports.getCrop = async (req, res) => {
     try {
         let cropId = req.params.id;
-        const data = await cropService.getCrop(cropId);
+        const data = await cropService.getCr(cropId);
         if(data == false){
             res.status(404).json({status: "error",message: "Crop not found"});
         }else{
@@ -23,21 +23,21 @@ const getCrop = async (req, res) => {
     }
 }
 
-const addCrop = async (req, res) => {
+exports.addCrop = async (req, res) => {
     try {
         let cropData = req.body;
-        const data = await cropService.addCrop(cropData);
+        const data = await cropService.addCr(cropData);
         res.json(data);
     } catch (error) {
         res.status(500).json({ message: error.message });
     }
 };
 
-const updateCrop = async (req, res) => {
+exports.updateCrop = async (req, res) => {
     try {
         let cropId = req.params.id;
         let cropData = req.body;
-        const data = await cropService.updateCrop(cropId, cropData);
+        const data = await cropService.updateCr(cropId, cropData);
         if(data == false){
             res.status(404).json({status: "error",message: "Crop not found"});
         }else{
@@ -48,10 +48,10 @@ const updateCrop = async (req, res) => {
     }
 };
 
-const deleteCrop = async (req, res) => {
+exports.deleteCrop = async (req, res) => {
     try {
         let cropId = req.params.id;
-        const data = await cropService.deleteCrop(cropId);
+        const data = await cropService.deleteCr(cropId);
         if(data == false){
             res.status(404).json({status: "error",message: "Crop not found"});
         }else{
@@ -61,5 +61,3 @@ const deleteCrop = async (req, res) => {
         res.status(500).json({ message: error.message });
     }
 };
-
-module.exports= {addCrop, updateCrop, getAllCrops, getCrop, deleteCrop}
