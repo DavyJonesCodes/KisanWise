@@ -8,6 +8,8 @@
 
 **KisanWise** is a frontend development showcase project demonstrating a mock AI-powered agricultural advice platform. This project highlights advanced frontend technologies and design patterns.
 
+![dashboard](./public/Images/dashboard.png)
+
 ## ✨ Features
 
 - 🌦 **Weather Updates UI:** Interface for displaying real-time weather forecasts.
