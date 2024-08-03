@@ -44,7 +44,7 @@ export default function HeroSection() {
         <div className="absolute inset-0 mx-auto h-1/3 w-full max-w-screen-2xl bg-primary opacity-30 blur-[128px]" />
         <div className="relative mx-4 overflow-hidden rounded-lg border sm:mx-8 md:mx-16">
           <Image
-            src="/Images/dashboard.png"
+            src="/KisanWise/Images/dashboard.png"
             width={1440 * 0.75}
             height={820 * 0.75}
             alt="KisanWise Dashbaord"

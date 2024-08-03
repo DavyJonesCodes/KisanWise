@@ -5,7 +5,7 @@ import "@/styles/globals.css";
 // Components
 import NavBar from "@/components/home/nav-bar";
 import { ThemeProvider } from "@/components/home/theme-provider";
-import { Toaster } from "@/components/ui/toaster"
+import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +26,7 @@ export const metadata: Metadata = {
   authors: [
     { name: "DavyJonesCodes ", url: "https://github.com/DavyJonesCodes" },
   ],
+  icons: "/KisanWise/favicon.ico",
 };
 
 export default function RootLayout({
