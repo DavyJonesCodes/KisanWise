@@ -29,7 +29,7 @@ export default function Dashboard() {
   const currentPath = usePathname();
 
   return (
-    <header className="sticky top-0 z-[9999] flex h-16 items-center gap-4 border-b border-border/40 bg-background/95 px-4 py-4 backdrop-blur supports-[backdrop-filter]:bg-background/60 md:px-6">
+    <header className="sticky top-0 z-50 flex h-16 items-center gap-4 border-b border-border/40 bg-background/95 px-4 py-4 backdrop-blur supports-[backdrop-filter]:bg-background/60 md:px-6">
       <nav className="hidden flex-col gap-6 text-lg font-medium md:flex-row md:items-center md:gap-5 md:text-sm lg:flex lg:gap-6">
         <div className="flex md:flex-1">
           <Link href="/" className="flex items-center">
