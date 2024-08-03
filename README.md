@@ -1,139 +1,80 @@
-# 🌾 KisanWise
+# 🌾 KisanWise - Frontend Showcase for Agricultural Advice Platform
 
-KisanWise is an AI-powered platform providing personalized agricultural advice to farmers. Leveraging advanced AI, it offers real-time assistance, expert guidance, and a wealth of resources to support sustainable farming. Built with React, Express, and MongoDB, KisanWise aims to enhance productivity and ensure food security.
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+[![License](https://img.shields.io/github/license/DavyJonesCodes/kisanWise?style=for-the-badge)](./LICENSE)
 
-## 📁 Project Structure
+**KisanWise** is a frontend development showcase project demonstrating a mock AI-powered agricultural advice platform. This project highlights advanced frontend technologies and design patterns.
 
-```
-kisanWise/
-├── backend/
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── middlewares/
-│   ├── services/
-│   ├── config/
-│   ├── utils/
-│   ├── server.js
-│   └── package.json
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   │   ├── assets/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── services/
-│   │   ├── styles/
-│   │   ├── store/
-│   │   ├── App.jsx
-│   │   ├── main.jsx
-│   └── package.json
-├── .gitignore
-├── README.md
-└── package.json
-```
+## ✨ Features
 
-## 🚀 Getting Started
+- 🌦 **Weather Updates UI:** Interface for displaying real-time weather forecasts.
+- 🤖 **AI Chatbot UI:** Mockup for an AI chatbot interaction.
+- 📚 **Resource Library UI:** Design for an extensive library of agricultural resources.
+- 🌱 **Personalized Advice UI:** Mock interface for receiving tailored advice based on user input.
+- 🛒 **Marketplace UI:** E-commerce design for agricultural products.
 
-### ✅ Prerequisites
+## 📋 Table of Contents
 
-Make sure you have the following installed on your local development environment:
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-- [Node.js](https://nodejs.org/)
-- [npm](https://www.npmjs.com/)
-- [MongoDB](https://www.mongodb.com/)
+## 🚀 Installation
 
-### 🔧 Backend Setup
+Follow these steps to get started with KisanWise:
 
-1. **Navigate to the `backend` directory:**
+1. **Clone the repository:**
 
-    ```bash
-    cd backend
-    ```
+   ```sh
+   git clone https://github.com/DavyJonesCodes/kisanWise.git
+   cd kisanWise
+   ```
 
 2. **Install dependencies:**
 
-    ```bash
-    npm install
-    ```
+   ```sh
+   npm install
+   ```
 
-3. **Create a `.env` file with the following content:**
+3. **Run the development server:**
 
-    ```env
-    MONGO_URI=your_mongodb_connection_string
-    PORT=5000
-    ```
+   ```sh
+   npm run dev
+   ```
 
-4. **Start the backend server:**
+## 💻 Usage
 
-    ```bash
-    npm start
-    ```
+To explore KisanWise, navigate to `http://localhost:3000` in your web browser. This project is a frontend-only mockup intended to demonstrate UI/UX design and frontend development skills.
 
-### 💻 Frontend Setup
+## 🌟 Contributing
 
-1. **Navigate to the `frontend` directory:**
+We welcome contributions! To contribute:
 
-    ```bash
-    cd ../frontend
-    ```
+1. Fork the repository.
+2. Create a new branch: `git checkout -b my-feature`
+3. Make your changes and commit them: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin my-feature`
+5. Submit a pull request.
 
-2. **Install dependencies:**
+Ensure your pull request adheres to our coding standards.
 
-    ```bash
-    npm install
-    ```
+## 📄 License
 
-3. **Start the frontend development server:**
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
-    ```bash
-    npm run dev
-    ```
+## 📞 Contact
 
-### 🔄 Running Both Servers Concurrently
+For inquiries or support, please contact:
 
-To run both the backend and frontend servers concurrently, you can use the root `package.json` scripts.
-
-1. **Navigate to the root directory:**
-
-    ```bash
-    cd ..
-    ```
-
-2. **Run the following command to start both servers:**
-
-    ```bash
-    npm start
-    ```
-
-This will concurrently run the backend server and the frontend development server using `concurrently`.
-
-### 📝 Root `package.json` Scripts
-
-Ensure your root `package.json` includes the following scripts:
-
-```json
-{
-  "name": "kisanwise",
-  "version": "1.0.0",
-  "description": "KisanWise is an AI-powered platform providing personalized agricultural advice to farmers.",
-  "scripts": {
-    "start:backend": "cd backend && npm start",
-    "start:frontend": "cd frontend && npm run dev",
-    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\""
-  },
-  "author": "Dev Jones",
-  "license": "MIT",
-  "devDependencies": {
-    "concurrently": "^6.0.0"
-  }
-}
-```
-
-## 📜 License
-
-This project is licensed under the MIT License. See the LICENSE file for more details.
+- **Dev Jones**
+  - 📧 [devjonescodes@gmail.com](mailto:devjonescodes@gmail.com)
 
 ---
 
-Feel free to reach out if you have any questions or need further assistance getting started with the project.
+Thank you for checking out KisanWise! 🌾 This project demonstrates my frontend development capabilities.
