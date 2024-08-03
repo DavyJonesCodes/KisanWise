@@ -10,7 +10,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "find:unused": "next-unused"
+    "find:unused": "next-unused",
+    "export": "next export"
   },
   "next-unused": {
     "alias": {
