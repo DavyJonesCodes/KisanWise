@@ -1,10 +1,12 @@
 # 🌾 KisanWise - Frontend Showcase for Agricultural Advice Platform
 
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-[![License](https://img.shields.io/github/license/DavyJonesCodes/kisanWise?style=for-the-badge)](./LICENSE)
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white"/>
+  <img src="https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"/>
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"/>
+  <img src="https://img.shields.io/github/license/DavyJonesCodes/kisanWise?style=for-the-badge" />
+</p>
 
 **KisanWise** is a frontend development showcase project demonstrating a mock AI-powered agricultural advice platform. This project highlights advanced frontend technologies and design patterns.
 
@@ -52,7 +54,9 @@ Follow these steps to get started with KisanWise:
 
 ## 💻 Usage
 
-To explore KisanWise, navigate to `http://localhost:3000` in your web browser. This project is a frontend-only mockup intended to demonstrate UI/UX design and frontend development skills.
+To explore KisanWise locally, navigate to `http://localhost:3000` in your web browser. This project is a frontend-only mockup intended to demonstrate UI/UX design and frontend development skills.
+
+You can also view the site online at [https://davyjonescodes.github.io/KisanWise/](https://davyjonescodes.github.io/KisanWise/).
 
 ## 🌟 Contributing
 
